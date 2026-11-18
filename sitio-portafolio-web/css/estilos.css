@@ -1,0 +1,115 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.img-galeria {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(1.02);
+}
+
+.video-utl {
+    max-height: 280px;
+    background-color: #000;
+}
+
+#menu_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+#glass .titulo {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #212529;
+}
+
+#glass form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#glass input[type="text"],
+#glass input[type="email"],
+#glass textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#glass input[type="text"]:focus,
+#glass input[type="email"]:focus,
+#glass textarea:focus {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25);
+}
+
+#glass .boton {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#glass .boton:hover {
+    background-color: #0dcaf0;
+    color: #212529;
+}
+.linea-acento {
+    width: 35px;
+    height: 3px;
+    background-color: #1abc9c; 
+}
+
+.linea-gris {
+    width: 25px;
+    height: 1px;
+    background-color: #adb5bd;
+}
+
+.linea-blanca {
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.seccion-servicios-bg {
+    background: linear-gradient(rgba(20, 20, 20, 0.72), rgba(20, 20, 20, 0.72)), 
+                url('../imagenes/imagen\(7\).jpg') center/cover no-repeat;
+}
